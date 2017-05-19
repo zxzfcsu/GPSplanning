@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zxz.locationtest.SecondActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbsecond"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Time setting"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YUMA文件GPS周数："
+        android:id="@+id/textView8"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="截止高度角为："
+        android:id="@+id/textView9"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="可见间隔时间："
+        android:id="@+id/textView10"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="时间间隔："
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="时区选择："
+        android:id="@+id/textView12"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tvWeek"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/spEAngle"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/spTimeSeparate"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/spTimeDuration"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"/>
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:id="@+id/spTimeZone"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"/>
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/spTimeZone"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/btnBack2first"
+        android:background="@drawable/back"
+        android:layout_alignBottom="@+id/tbsecond"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="Back2first"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/btnNext2third"
+        android:background="@drawable/next"
+        android:layout_alignBottom="@+id/tbsecond"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:onClick="Forward"
+        />
+</RelativeLayout>

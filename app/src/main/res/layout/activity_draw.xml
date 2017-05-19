@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbthird"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Figure"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            />
+    </android.support.v7.widget.Toolbar>
+    <Button
+        android:id="@+id/btnBack2second"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/back"
+        android:layout_alignBottom="@+id/tbthird"
+        android:layout_alignParentStart="true"
+        android:onClick="Back2second"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="绘制卫星高度角图像"
+        android:id="@+id/btnDraw"
+        android:onClick="drawfigure"
+        android:layout_below="@+id/tbthird"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="绘制卫星可见性图像"
+        android:id="@+id/button2"
+        android:onClick="drawafigure"
+        android:layout_below="@+id/btnDraw"
+        android:layout_alignStart="@+id/btnDraw"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="绘制GDOP值图像"
+        android:id="@+id/button3"
+        android:onClick="drawPDOP"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="39dp" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TimeZone">
+        <item>UTC+00 伦敦</item>
+        <item>UTC+03 巴格达</item>
+        <item>UTC+05 马尔代夫</item>
+        <item>UTC+08 北京</item>
+        <item>UTC+10 关岛</item>
+        <item>UTC+12 新西兰</item>
+        <item>UTC-03 巴西利亚</item>
+        <item>UTC-10 夏威夷</item>
+    </string-array>
+</resources>
